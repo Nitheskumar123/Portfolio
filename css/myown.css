@@ -1,0 +1,817 @@
+@font-face {
+    font-family: myfont;
+    src: url("C:/Users/Asus/Downloads/sansation/Sansation_Regular.ttf");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#img1 {
+    width: 400px;
+    height: 500px;
+    border-radius: 10%;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 25px cyan, 0 0 25px cyan;
+}
+
+#img2 {
+    width: 400px;
+    height: 300px;
+    border-radius: 10%;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 25px cyan, 0 0 25px cyan;
+}
+
+.h {
+
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: transparent;
+    padding: 20px 10%;
+    z-index: 100;
+}
+
+
+
+.logo {
+
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    /* Aligns navigation links horizontally */
+}
+
+.no-style {
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: normal;
+    /* Reset font weight */
+    font-size: inherit;
+    /* Reset font size to inherit from parent */
+    color: inherit;
+    /* Reset color to inherit from parent */
+    margin: 0;
+    /* Remove margin */
+    opacity: 1;
+    /* Reset opacity */
+    animation: none;
+    /* Disable animation */
+}
+
+
+.nav a {
+
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+
+    margin-left: 35px;
+    color: white;
+    opacity: 0;
+    animation: slidetop .5s ease forwards;
+    transition: .3s;
+    opacity: 0;
+    animation: slidetop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+
+}
+
+.nav a:hover {
+    color: #0ef;
+}
+
+.menu {
+    display: none;
+    /* Hides the menu icon by default */
+}
+
+.s1 {
+    display: flex;
+    background-color: #010a11;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px 120px;
+    color: white;
+
+}
+
+.homec {
+    max-width: 700px;
+}
+
+
+.homec h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slidebottom 1s ease forwards;
+    animation-delay: .7s;
+
+
+
+}
+
+.homec h1 {
+    font-size: 56px;
+    font-weight: 700;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+
+}
+
+.homec p {
+    font-size: 20px;
+    animation: slideleft 1s ease forwards;
+    animation-delay: 1s;
+
+
+}
+
+.homes a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    color: #0ef;
+    font-size: 20px;
+    text-decoration: none;
+    transition: .5s ease;
+    margin: 30px 15px 30px 0;
+    animation: slideleft .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+
+
+
+}
+
+.homes a:hover {
+    background: #0ef;
+    color: #010a11;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.btn-box {
+
+    background-color: #0ef;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 40px;
+    padding: 20px 25px;
+
+    font-weight: 600;
+    box-shadow: 0 0 5px #0ef,
+        0 0 25px #0ef;
+    opacity: 0;
+    animation: slidetop 2s ease forwards;
+    animation-delay: 2s;
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+.homec span {
+    color: cyan;
+}
+
+#i1 {
+    margin-bottom: 30px;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translate(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slidetop {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideleft {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.about {
+    min-height: 85vh;
+    background-color: #010a11;
+    color: white;
+}
+
+
+
+.about_div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.about_div1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 700px;
+    align-items: center;
+}
+
+.about_head1 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 60px;
+
+}
+
+
+.about_head2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.btn1 {
+    background-color: rgb(29, 1, 1);
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 40px;
+    padding: 15px 15px;
+    color: aliceblue;
+    text-decoration: none;
+    border-color: #081B28;
+    opacity: 0;
+    animation: slidebottom 2s ease forwards;
+
+
+
+
+}
+
+.btn1:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+@keyframes slidebottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.field_sec {
+    min-height: 90vh;
+    background-color: #010a11;
+    color: aliceblue;
+    padding: 40px 40px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.field_blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.field_head {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 50px;
+
+
+}
+
+.field1_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 350px;
+
+}
+
+
+.field1 {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 350px;
+    border: 2px solid black;
+
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 0 5px #0ef,
+        0 0 25px #0ef;
+    border: none;
+
+}
+
+
+.field1_btn {
+    background-color: #0ef;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 15px;
+    width: 100px;
+    border: none;
+    border-radius: 20%;
+    box-shadow: 0 0 5px #0ef,
+        0 0 25px #0ef;
+}
+
+.field1_btn:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+.field2_btn {
+    background-color: #0ef;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 15px;
+    width: 150px;
+    border: none;
+    border-radius: 20%;
+    box-shadow: 0 0 5px #0ef,
+        0 0 25px #0ef;
+}
+
+.field2_btn:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+.skills {
+    min-height: 80vh;
+    background-color: #010a11;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.skill_h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.skill {
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills_web div {
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+}
+
+.bar_range {
+    background-color: rgb(214, 243, 245);
+    display: block;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    width: 250px;
+    margin-top: 10px;
+}
+
+.bar_range span {
+    height: 20px;
+    float: left;
+    background-color: rgb(221, 11, 105);
+}
+
+.html_bar {
+
+    width: 90%;
+    animation: htmlani 3s;
+}
+
+.css_bar {
+    width: 80%;
+    animation: cssani 3s;
+}
+
+.react_bar {
+    width: 70%;
+    animation: reactani 3s;
+}
+
+.javascript_bar {
+    width: 75%;
+    animation: javascriptani 3s;
+}
+
+.django_bar {
+    width: 84%;
+    animation: djangoani 3s;
+}
+
+@keyframes htmlani {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes djangoani {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 84%;
+    }
+}
+
+@keyframes cssani {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes javascriptani {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes reactani {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+
+
+.contact-form {
+    padding-top: 140px;
+    margin: 0 auto;
+    max-width: 530px;
+
+
+
+}
+
+.contactdiv {
+    min-height: 100vh;
+    background-color: #010a11;
+}
+
+.contactform {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px cyan, 0 0 15px cyan, 0 0 5px cyan;
+    color: aliceblue;
+    padding: 40px;
+
+
+
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contactform-class {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contactform input {
+    height: 35px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+
+
+}
+
+.contactform textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.contactform button {
+    margin-left: 42%;
+
+    padding: 10px;
+    background-color: #007bff;
+    color: aliceblue;
+    border: none;
+
+
+
+
+}
+
+.contactform button:hover {
+    box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 10px cyan, 0 0 10px cyan, 0 0 10px cyan;
+
+}
+
+.contactform textarea {
+    max-width: 100%;
+    height: 160px;
+}
+
+.contactform input:hover,
+textarea:hover {
+    box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 20px cyan, 0 0 20px cyan, 0 0 10px cyan;
+
+
+}
+
+.menu {
+    display: none;
+}
+
+@media screen and (max-width: 752px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+    }
+
+    .menu {
+        color: azure;
+        margin-top: 10px;
+    }
+
+    .nav {
+        position: absolute;
+        top: 60px;
+        right: -100%;
+        flex-direction: column;
+        background-color: #333;
+        width: 60%;
+        padding: 10px 0;
+        gap: 10px;
+        transition: right 0.3s ease-in-out;
+    }
+
+
+
+    .nav a {
+        font-size: 1.5rem;
+
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    /* Show the menu when the "menu" class is active */
+    .nav.active {
+        right: 0;
+    }
+
+
+
+    .s1 {
+        min-height: 130vh;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .homec {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .homec h1 {
+        font-size: 24px;
+    }
+
+    .homec h3 {
+        font-size: 18px;
+    }
+
+    .homec p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .homes {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .homes a {
+        margin: 0 5px;
+    }
+
+    .my_img {}
+
+    .my_img img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .btn-box {
+        margin-top: 15px;
+        display: inline-block;
+    }
+
+    .about_div {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .img {
+
+        margin-bottom: 20px;
+    }
+
+    .img video {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .about_div1 {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .about_head1 {
+        font-size: 28px;
+    }
+
+    .about_head2 {
+        font-size: 20px;
+    }
+
+    .about_detail {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .btn1 {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 16px;
+    }
+
+    .field_sec {
+        padding: 10px;
+    }
+
+    .field1 {
+        padding: 10px;
+    }
+
+    .field1_icons img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .field1 h1 {
+        font-size: 1.2rem;
+    }
+
+    .field1 p {
+        font-size: 0.9rem;
+    }
+
+    .field1_btn {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .skills {
+
+        min-height: 200vh;
+
+    }
+
+    .skills h1 {
+        font-size: 25px;
+
+    }
+
+    .skill {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .skill h2 {
+        text-align: center;
+        color: aqua;
+    }
+
+    #contact {
+        min-height: 100vh;
+    }
+
+    .contactform {
+
+        border: none;
+        box-shadow: none;
+    }
+
+    .contactform h2 {
+        font-size: 20px;
+    }
+
+    .submit {
+        padding-right: 50px;
+    }
+
+
+
+
+
+}
